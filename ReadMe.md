@@ -17,29 +17,29 @@ The project I built was a workout tracker where you can track all of your workou
 
 ### Wire Frame:
 
-<img src="/Users/ahmedali/PersonalProgrammingPortfolio/Project-2-FullStack-CRUD/workout-planner-project/public/images/wireframe.png">
+<img src="Project-2-FullStack-CRUD/workout-planner-project/public/images/wireframe.png">
 
 ### App Screenshots:
 All Exercises (Main Page):
-<img src="/Users/ahmedali/PersonalProgrammingPortfolio/Project-2-FullStack-CRUD/workout-planner-project/public/images/Screen Shot 2022-03-04 at 22.24.51.png">
+<img src="Project-2-FullStack-CRUD/workout-planner-project/public/images/Screen Shot 2022-03-04 at 22.24.51.png">
 
 Create Exercise:
-<img src="/Users/ahmedali/PersonalProgrammingPortfolio/Project-2-FullStack-CRUD/workout-planner-project/public/images/Screen Shot 2022-03-04 at 22.25.01.png">
+<img src="Project-2-FullStack-CRUD/workout-planner-project/public/images/Screen Shot 2022-03-04 at 22.25.01.png">
 
 All Athletes:
-<img src="/Users/ahmedali/PersonalProgrammingPortfolio/Project-2-FullStack-CRUD/workout-planner-project/public/images/Screen Shot 2022-03-04 at 22.25.14.png">
+<img src="Project-2-FullStack-CRUD/workout-planner-project/public/images/Screen Shot 2022-03-04 at 22.25.14.png">
 
 About Us:
-<img src="/Users/ahmedali/PersonalProgrammingPortfolio/Project-2-FullStack-CRUD/workout-planner-project/public/images/Screen Shot 2022-03-04 at 22.25.24.png">
+<img src="Project-2-FullStack-CRUD/workout-planner-project/public/images/Screen Shot 2022-03-04 at 22.25.24.png">
 
 Workout Details PT.1:
-<img src="/Users/ahmedali/PersonalProgrammingPortfolio/Project-2-FullStack-CRUD/workout-planner-project/public/images/Screen Shot 2022-03-04 at 22.25.50.png">
+<img src="Project-2-FullStack-CRUD/workout-planner-project/public/images/Screen Shot 2022-03-04 at 22.25.50.png">
 
 Workout Details PT.2:
-<img src="/Users/ahmedali/PersonalProgrammingPortfolio/Project-2-FullStack-CRUD/workout-planner-project/public/images/Screen Shot 2022-03-04 at 22.25.57.png">
+<img src="Project-2-FullStack-CRUD/workout-planner-project/public/images/Screen Shot 2022-03-04 at 22.25.57.png">
 
 ERD:
-<img src= "/Users/ahmedali/PersonalProgrammingPortfolio/Project-2-FullStack-CRUD/workout-planner-project/public/images/Screen Shot 2022-03-05 at 10.23.06.png">
+<img src= "Project-2-FullStack-CRUD/workout-planner-project/public/images/Screen Shot 2022-03-05 at 10.23.06.png">
 
 ### Getting Started:
 ### Getting Started:
