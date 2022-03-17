@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/2974d6b2aa.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100;0,600;1,400&family=Orbitron:wght@800&display=swap" rel="stylesheet">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <title><% title %></title>
+</head>
+<body>
+  <nav class="navMenu">
+    <h1>Rep Count</h1>
+    <img src="">
+    <a href="/exercise/new" <%- title === 'Add Exercise' ? 'class="active"' : '' %>>ADD EXERCISE 💪🏽</a>
+    <a href="/exercise" <%- title === 'All Exercises' ? 'class="active"' : '' %>>EXERCISES</a>
+    <a href="/athlete/index" <%- title === 'All Athletes' ? 'class="active"' : '' %>>ATHLETES</a>
+    <a href="/aboutus/index" <%- title === 'About Us' ? 'class="active"' : '' %>>ABOUT US</a>
+    <% if (user) { %>
+      <a href="/logout"><i class="fa-brands fa-google"></i></i>LOG OUT</a>
+    <% } else { %>
+      <a href="/auth/google"><i class="fa-brands fa-google"></i></i>LOGIN</a>
+    <% } %>
+    <div class="dot"></div>
+  </nav>
+</body>
+
+  <main>
+    <h1 class="page-header"><%= title %></h1>

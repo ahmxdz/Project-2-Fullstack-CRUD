@@ -1,0 +1,29 @@
+<%- include('../partials/header') %>
+
+
+<!-- create function -->
+<div class="">
+  <form method='POST' action='/exercise'>
+      <ul>
+        <div>
+        <label>Workout Name:</label>
+        <input type='text' name='exerciseName' class="feedback-input"/>
+        </div>
+        <div> 
+        <label>Equipment Used:</label>
+        <input type='text' name='equipment' class="feedback-input"/>
+        </div>
+        <div> 
+        <label>Target Muscles:</label>
+        <input type='text' name='targetMuscle' class="feedback-input"/>
+        </div>
+        <div>
+        </div>
+        <input type='submit' value='Create Workout!'/>
+      </ul>
+</div>
+  </form>
+
+<%- include('../partials/footer') %>
+
+

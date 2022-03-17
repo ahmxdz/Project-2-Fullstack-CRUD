@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  color: #424748;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  grid-template-areas: 
+    "nav"
+    "main"
+}
+
+body > nav {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  /* height: 100%; */
+  grid-area: nav;
+  background-color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px 0 30px;
+  color: white;
+  width: 100vw;
+}
+
+nav > img {
+  width: 34px;
+  object-fit: contain;
+  margin-right: auto;
+}
+
+body > main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  scroll-behavior: smooth;
+}
+
+body > main h1:first-child {
+  margin-bottom: 50px;
+}
+
+nav > a {
+  margin: 20px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav > a:hover {
+  color: white;
+  background-color:rgb(67, 65, 65);
+}
+
+nav > a.active {
+  color: white;
+}
+
+
+table {
+  font-size: 20px;
+}
+
+table thead th {
+  padding: 5px;
+  border-bottom: 2px solid #424748;
+}
+
+table td {
+  padding: 10px;
+  text-align: center;
+}
+h1{
+  color: #fddb3a;
+}
+.page-header{
+  color:  black;
+}
+.navMenu a {
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: #fddb3a;
+} 
+
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  background: #fddb3a;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(110px);
+  transform: translateX(110px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(200px);
+  transform: translateX(200px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(285px);
+  transform: translateX(285px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+} 
+
+
+
+.feedback-input {
+  color:black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:5px solid #fddb3a;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:black;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { 
+  color:black;
+  background:#fddb3a; }
+
+.addAthleteButton {
+  width: 25%;
+  font-size: 20px;
+  height:50px;
+  padding-bottom: 41px;
+  display:inline-block;
+  align-items: center;
+  margin-left: 224px;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+.athlete-list{
+  display: grid;
+  align-items: center;
+  top: 50px;
+  font-size: 20px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  justify-content: space-around;
+}
+
+.fa-solid, .fa-dumbbell{
+  margin: 1px 1px 1px 1px;
+  padding: 15px;
+}
+
+.fa-brands, .fa-google{
+  margin-right: 10px;
+  color: white;
+}
+
+.dropDown{
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  display:flex;
+  margin-left:223px;
+  margin-top: 15px;
+  width: 25%;
+  text-align: center;
+  background:white;
+  border-radius:5px;
+  border:1px black solid;
+  cursor:pointer;
+  color:black;
+  font-size:15px;
+  padding: 12px 0px 16px 0px;
+  transition: all 0.3s;
+
+  font-weight:700;
+}
+
+.select-athlete{
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.deleteBtn{
+  width: 100%;
+  font-size: 20px;
+  height: 45px;
+  padding-bottom: 40px;
+  display: inline-flex;
+  padding: 9px;
+  background-color: black;
+  color:red;
+  border-radius: 5px;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+.deleteBtn:hover { 
+  color:red;
+  background:#fddb3a; }
+
+.athlete-name{
+  text-align: center;
+}
+.exerciseName{
+  text-align: center;
+  font-size: 25px;
+  position: relative;
+  top: -60px;
+  left: -24px;
+}

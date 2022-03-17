@@ -1,0 +1,15 @@
+<%- include('../partials/header') %>
+
+<form id="add-athlete-form" action="/athlete/index" method="POST">
+  <label>Athlete Name:</label>
+  <input type="text" name="Name" class="feedback-input">
+  <input type="submit" value="Add Athlete">
+</form>
+<h4>Please first ensure that the Athlete is not listed below</h>
+<div class= "athlete-list">
+    <% athletes.forEach(function(a) { %>
+      <div> <i class="fa-solid fa-dumbbell"></i><%= a.Name %></div>
+    <% }) %>
+
+    </div>
+<%- include('../partials/footer') %>

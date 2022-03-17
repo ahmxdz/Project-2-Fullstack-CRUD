@@ -1,0 +1,101 @@
+
+<%- include('../partials/header') %>
+
+    <ul>
+        
+        <div class="exerciseName">Exercise: <%= exercise.exerciseName %> </div>
+        <% exercise.workouts.forEach(workout => { %>
+        <div> <i class="fa-solid fa-dumbbell"></i># of Reps: <%= workout.numOfReps %> </div>
+        <div> <i class="fa-solid fa-dumbbell"></i># of Sets: <%= workout.setNumber %> </div>    
+        <div> <i class="fa-solid fa-dumbbell"></i>Weight in Lbs: <%= workout.weight %> </div>
+        <div> <i class="fa-solid fa-dumbbell"></i>Date: <%= workout.date %> </div>
+        <div class="select-athlete"> Select Athlete: </div> 
+        <div> 
+            <% workout.athletes.forEach(function(a) { %>
+        <div class="athlete-name"><%= a.Name %></div>
+      <% }) %>
+     
+            <form id="addAthlete" action="/exercise/<%= exercise._id %>/workout/<%= workout._id %>/athlete" method="POST">
+            <select class="dropDown" name="athleteId">
+                <%- athletes.map(a => `<option value="${a._id}">${a.Name}</option>`).join('') %>
+            </select>
+                <button class="addAthleteButton" type="submit">Add Athlete</button>
+            </form>
+        </div>
+        <% }) %>
+    </ul> 
+        <!-- <div><form action="/exercise/<%# exercise._id %>/?_method=DELETE"  method="POST"> -->
+            <!-- <button style="text-decoration: none; color: red;">DELETE</button> -->
+        <!-- </form></div> -->
+        
+        <!-- <div><form action="/exercise/updateWorkout/<%# workout._id %>/<%# exercise._id %>?_method=PUT"  method="POST"> -->
+            <!-- <button style="text-decoration: none; color: blue;"></button> -->
+        <!-- </form></div> -->
+        
+
+<h2>Create Workout</h2>
+    <form method='POST' action='/exercise/workout/<%= exercise._id %>'>
+          <ul>
+            <div> 
+              <label># of Reps</label>
+              <input type='number' name='numOfReps' class="feedback-input"/>
+            </div>
+            <div> 
+              <label># of Sets</label>
+              <input type='number' name='setNumber' class="feedback-input"/>
+            </div>
+            <div>
+              <label>Weight in Lbs</label>
+              <input type='number' name='weight' class="feedback-input"/>
+            </div>
+            <div>
+              <label>Date</label>
+              <input type='date' name='date' class="feedback-input"/>
+            </div>
+              <input type='submit' value='Create Sets!'/>
+          </ul>
+    </form>
+      
+<!-- <h2>Update Workout </h2>
+    <form method='POST' action='/exercise/<%# exercise._id %>?_method=PUT'>
+        <ul>
+            <div> 
+                <label># of Reps</label>
+                <input type='number' name='numOfReps'/>
+            </div>
+            <div> 
+                <label># of Sets</label>
+                <input type='number' name='setNumber'/>
+            </div>
+            <div>
+                <label>Weight in Lbs</label>
+                <input type='number' name='weight'/>
+            </div>
+            <div>
+                <label>Date</label>
+                <input type='date' name='date'/>
+            </div>
+                <input type='submit' value='Create Sets!'/>
+        </ul>
+     </form> -->
+
+<h2>Update Exercise</h2>
+    <form class="form-floating" method='POST' action='/exercise/<%= exercise._id %>?_method=PUT'>
+      <ul>
+        <div>
+            <label>Workout Name</label>
+            <input type='text' name='exerciseName'class="feedback-input"/>
+        </div>
+        <div> 
+            <label>Equipment Used</label>
+            <input type='text' name='equipment'class="feedback-input"/>
+        </div>
+        <div> 
+            <label>Target Muscles</label>
+            <input type='text' name='targetMuscle'class="feedback-input"/>
+        </div>
+            <input type='submit' class="glow-on-hover" id="floatingInputValue" value='Update Workout!'/>
+      </ul>
+        </form>
+
+<%- include('../partials/footer') %>
