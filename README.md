@@ -42,7 +42,6 @@ ERD:
 <img src= "Project-2-FullStack-CRUD/workout-planner-project/public/images/Screen Shot 2022-03-05 at 10.23.06.png">
 
 ### Getting Started:
-### Getting Started:
 
 Link to the deployed app is here: <a href = http://localhost:4100/exercise > REP COUNT </a>
 
