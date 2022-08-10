@@ -43,7 +43,7 @@ ERD:
 
 ### Getting Started:
 
-Link to the deployed app is here: <a href = http://localhost:4100/exercise > REP COUNT </a>
+Link to the deployed app is here: <a href = "https://project-2-fullstack-crud.herokuapp.com/exercise"> REP COUNT </a>
 
 Link to my Trello Board is here: <a href = https://trello.com/b/OBihgYqr/project-2-crud-app > TRELLO </a>
 
