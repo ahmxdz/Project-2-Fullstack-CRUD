@@ -54,3 +54,4 @@ My Ice Box items are:
 <li> Implement AppleOAuth </li>
 <li> Make GoogleOAuth save all user workout data </li>
 <li> Ability to add meals with those workouts </li>
+<li> Ability to display your favorite workouts</li>
